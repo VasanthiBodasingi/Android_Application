@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/allocation_matrix_textview"
+        android:text="Allocation Matrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/allocation_matrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_below="@+id/allocation_matrix_textview" />
+
+    <TextView
+        android:id="@+id/max_matrix_textview"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Matrix"
+        android:textSize="25dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/max_matrix_generated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/available_memory_textview"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Memory"
+        android:textSize="25dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/available_memory_generated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/analyse_button"
+        android:text="Analyse"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="isSafe" />
+
+    <Button
+        android:id="@+id/automatic_generate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="automaticGenerate"
+        android:text="Automatic Generate" />
+</LinearLayout>
